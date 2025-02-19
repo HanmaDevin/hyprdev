@@ -1,0 +1,4 @@
+brave
+hyprshot
+jetbrains-toolbox
+lazydocker

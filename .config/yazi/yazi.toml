@@ -1,0 +1,15 @@
+[opener]
+open = [
+  { run = 'okular "$@"'},
+]
+play = [
+  { run = 'vlc "$@"', orphan = true, for = "unix" },
+]
+edit = [
+  {run = 'nvim "$@"', block = true },
+]
+
+[open]
+prepend_rules = [
+  { name = "*.pdf", use = "open" }
+]
