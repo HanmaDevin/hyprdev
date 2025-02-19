@@ -16,11 +16,11 @@ _darcs
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
-^/README.*
-^/LICENSE.*
-^/COPYING
+\README.*
+\LICENSE.*
+\COPYING
 
-^/Cursor
-^/Fonts
-^/scripts
-^/yay*
+\Cursor
+\Fonts
+\scripts
+\yay*
