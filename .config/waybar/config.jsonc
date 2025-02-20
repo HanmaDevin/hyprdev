@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
+  "modules-right": ["cpu", "network", "bluetooth", "pulseaudio", "battery", "clock"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -37,6 +37,11 @@
       "default": ["", "", " "]
     },
     "on-click": "pavucontrol"
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{usage}% ",
+    "max-length": 10
   },
   "bluetooth": {
     "format": "<span foreground='#f5c2e7'> {status}</span>",
