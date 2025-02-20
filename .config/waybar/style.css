@@ -57,6 +57,7 @@ button:hover {
 #pulseaudio,
 #clock,
 #battery,
+#bluetooth,
 #cpu,
 #memory,
 #disk,
@@ -73,6 +74,13 @@ button:hover {
   margin-right: 4px;
   padding-left: 4px;
   padding-right: 4px;
+}
+
+#bluetooth {
+
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
+
 }
 
 #clock {
