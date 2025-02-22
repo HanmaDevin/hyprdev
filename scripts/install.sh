@@ -17,7 +17,8 @@ config_ufw() {
 
 copy_config() {
   cp "$HOME/hyprland/.zshrc" "$HOME/"
-  cp "$HOME/hyprland/.config" "$HOME/"
+  cp -r "$HOME/hyprland/.config" "$HOME/"
+  cp -r "$HOME/hyprland/Pictures/Wallpaper/" "$HOME/Pictures/"
 }
 
 install_yay(){
