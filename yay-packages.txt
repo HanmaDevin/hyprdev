@@ -1,4 +1,4 @@
-brave
+google-chrome
 hyprshot
 jetbrains-toolbox
 lazydocker
