@@ -1,4 +1,5 @@
 google-chrome
+swaync
 hyprshot
 jetbrains-toolbox
 lazydocker
