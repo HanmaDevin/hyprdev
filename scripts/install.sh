@@ -1,7 +1,7 @@
 #! /bin/bash
 
 install_packages() {
-  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle")
+  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle")
 
   for package in "${packages[@]}"; do
 	sudo pacman -S "$package" --noconfirm || { echo "Failed to install $package"; }
@@ -9,9 +9,15 @@ install_packages() {
 }
 
 config_ufw() {
+  sudo systemctl start ufw
   sudo ufw default deny incoming
   sudo ufw default allow outgoing
   sudo ufw enable
+}
+
+copy_config() {
+  cp "$HOME/hyprland/.zshrc" "$HOME/"
+  cp "$HOME/hyprland/.config" "$HOME/"
 }
 
 install_yay(){
@@ -64,6 +70,7 @@ configure_git
 
 config_ufw
 install_nitch
+copy_config
 install_themes
 add_tmux_tpm
 
