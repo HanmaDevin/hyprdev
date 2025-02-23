@@ -12,15 +12,12 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+    "format": "<span size='13000' foreground='#a6e3a1'> </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#B1E3AD'> </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#E38C8F'>! </span> {capacity}%",
     "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
     "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
     "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{time}"
   },
   "network": {
     "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
@@ -44,12 +41,12 @@
   },
   "memory": {
     "interval": 30,
-    "format": "{percentage}% ",
+    "format": " {percentage}%",
     "max-length": 10
   },
   "cpu": {
     "interval": 10,
-    "format": "{usage}% ",
+    "format": " {usage}%",
     "max-length": 10
   },
   "bluetooth": {
