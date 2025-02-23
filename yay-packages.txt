@@ -1,4 +1,5 @@
 google-chrome
+wlogout
 swaync
 hyprshot
 jetbrains-toolbox
