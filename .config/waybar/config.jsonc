@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["memory", "cpu", "network", "bluetooth", "pulseaudio", "battery", "clock"],
+  "modules-right": ["memory", "cpu", "network", "bluetooth", "pulseaudio", "battery", "clock", "custom/power"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -29,6 +29,10 @@
     "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
     "on-click": "kitty -e nmtui"
+  },
+  "custom/power": {
+    "format": "<span size='13000' foreground='#cdd6f4'></span>",
+    "on-click": "wlogout"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",

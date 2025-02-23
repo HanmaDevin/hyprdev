@@ -59,6 +59,7 @@ button:hover {
 #battery,
 #bluetooth,
 #cpu,
+#custom-power,
 #memory,
 #disk,
 #temperature,
@@ -76,10 +77,14 @@ button:hover {
   padding-right: 4px;
 }
 
+#custom-power {
+    color: @text;
+    border-bottom: 2px solid @text;
+}
+
 #bluetooth {
     color: @maroon;
     border-bottom: 2px solid @maroon;
-
 }
 
 #clock {
