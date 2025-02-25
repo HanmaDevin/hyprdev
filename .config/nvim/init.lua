@@ -90,6 +90,10 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.opt.number = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.autoindent = true
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
