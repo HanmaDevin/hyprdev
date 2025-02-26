@@ -2,5 +2,6 @@ google-chrome
 wlogout
 swaync
 hyprshot
+hyprscratch
 jetbrains-toolbox
 lazydocker
