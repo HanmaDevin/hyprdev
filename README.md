@@ -40,14 +40,18 @@ Keybind | Action
 <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating Window
 <kbd>Super</kbd> + <kbd>Space</kbd> | Open Application Launcher
 <kbd>Super</kbd> + <kbd>R</kbd> | Toggle split Orientation
+<kbd>Super</kbd> + <kbd>H</kbd> | Move focus Left
+<kbd>Super</kbd> + <kbd>J</kbd> | Move focus Down
+<kbd>Super</kbd> + <kbd>K</kbd> | Move focus Up
+<kbd>Super</kbd> + <kbd>L</kbd> | Move focus Right
 <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>H</kbd>| Resize Window Left
-<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd>| Resize Window down
-<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd>| Resize Window up
-<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>| Resize Window right
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd>| Resize Window Down
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd>| Resize Window Up
+<kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>| Resize Window Right
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd>| Move Window Left
-<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>| Move Window down
-<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>| Move Window up
-<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>| Move Window right
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>| Move Window Down
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>| Move Window Up
+<kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>| Move Window Right
 <kbd>Super</kbd> + <kbd>B</kbd> | Open Chrome
 <kbd>Super</kbd> + <kbd>S</kbd> | Open Steam
 <kbd>Super</kbd> + <kbd>M</kbd> | Open btop (System Monitor)
