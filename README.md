@@ -29,4 +29,5 @@ You should be good to go afterwards.
 ## Keybinds
 
 Keybind | Action
-<kbd>Command Return</kbd> | Open Terminal
+--- | --- 
+<kbd>Super</kbd> + <kbd>Return</kbd> | Open Terminal
