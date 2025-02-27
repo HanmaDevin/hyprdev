@@ -9,6 +9,7 @@ This configuration is aimed towards arch users with a minimal installation.
 ## Screenshots
 
 ![screenshot](https://github.com/HanmaDevin/hyprland/blob/master/img/2025-02-20-204941_hyprshot.png)
+![screenshot](img/2025-02-27-184002_hyprshot.png)
 
 Just clone this repo _https://github.com/HanmaDevin/hyprland.git_
 
