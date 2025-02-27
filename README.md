@@ -19,13 +19,19 @@ This configuration is aimed towards arch users with a minimal installation.
 Just clone this repo _https://github.com/HanmaDevin/hyprland.git_
 
 
-```git clone https://github.com/HanmaDevin/hyprland.git ~/```
+```bash
+git clone https://github.com/HanmaDevin/hyprland.git ~/
+```
 
 
-```cd hyperland```
+```bash
+cd hyperland
+```
 
 
-```./scripts/install.sh```
+```bash
+./scripts/install.sh
+```
 
 You should be good to go afterwards.
 
