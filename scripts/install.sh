@@ -40,7 +40,8 @@ configure_git() {
     git config --global user.email "$useremail"
   fi
   
-  if [[ $gitconfig == "y" ]]; then
+  read -r -p "Want to create ssh key? (y/n): " ssh
+  if [[ $ssh == "y" ]]; then
     ssh-keygen -t ed25519 -C "$useremail"
   fi
 }
@@ -86,3 +87,16 @@ yay -S --noconfirm $(cat "$HOME/hyprland/yay-packages.txt")
 echo "Finished!"
 
 cat "$HOME/.ssh/id_ed25519.pub"
+
+bash "$HOME/hyprland/scripts/zsh-plugins.sh"
+
+chsh /bin/zsh 
+
+systemctl enable sddm 
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+echo "Now you are ready to reboot"
+echo "Do not forget to install node using 'nvm install 22'"
+
+sleep 5
