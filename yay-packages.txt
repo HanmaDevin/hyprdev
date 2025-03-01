@@ -1,4 +1,5 @@
 google-chrome
+xwaylandvideobridge
 wlogout
 swaync
 hyprshot
