@@ -116,6 +116,9 @@ alias q="exit"
 
 alias ..='z ..'
 
+# use vim keybinds
+set -o vi
+
 # you may also use the following one
 bindkey -s '^o' 'nvim $(fzf)\n'
 bindkey -s '^e' 'yazi\n'
