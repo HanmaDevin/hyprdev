@@ -20,7 +20,11 @@ Just clone this repo _https://github.com/HanmaDevin/hyprland.git_
 
 ## Updating the Desktop
 
-You can simply run `. updateos` in your terminal.
+You can simply run 
+```bash
+. updateos
+```
+in your terminal.
 
 ## Installation
 
@@ -35,7 +39,7 @@ cd hyperland
 
 
 ```bash
-./scripts/install.sh
+./scripts/install
 ```
 
 You should be good to go afterwards.
