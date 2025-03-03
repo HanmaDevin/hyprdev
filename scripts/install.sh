@@ -99,6 +99,8 @@ systemctl enable sddm
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
+sudo cp "$HOME/hyprland/scripts/updateos" "/usr/bin/"
+
 echo "Now you are ready to reboot"
 
 sleep 5

@@ -1,5 +1,8 @@
 #! /bin/bash
 
+cd "$HOME/hyprland/"
+git pull --rebase
+
 install_packages() {
   packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "lutris")
 
@@ -23,3 +26,4 @@ echo "Installing packages from yay"
 yay -S --noconfirm $(cat "$HOME/hyprland/yay-packages.txt")
 echo "Finished!"
 
+cd "$HOME"
