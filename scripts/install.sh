@@ -19,6 +19,8 @@ copy_config() {
   cp "$HOME/hyprland/.zshrc" "$HOME/"
   cp -r "$HOME/hyprland/.config" "$HOME/"
   cp -r "$HOME/hyprland/Pictures/Wallpaper/" "$HOME/Pictures/"
+  sudo cp -r "$HOME/hyprland/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
+  sudo cp "$HOME/hyprland/sddm/sddm.conf" "/etc/"
 }
 
 install_yay(){
