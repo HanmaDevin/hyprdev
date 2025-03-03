@@ -114,7 +114,7 @@ button:hover {
 
 #memory {
     color: @pink;
-    border-bottom: 2px solid @yellow;
+    border-bottom: 2px solid @pink;
 }
 
 #idle_inhibitor {
