@@ -1,7 +1,7 @@
 #! /bin/bash
 
 install_packages() {
-  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "lutris")
+  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager")
 
   for package in "${packages[@]}"; do
 	sudo pacman -S "$package" --noconfirm || { echo "Failed to install $package"; }
@@ -92,13 +92,13 @@ cat "$HOME/.ssh/id_ed25519.pub"
 
 bash "$HOME/hyprland/scripts/zsh-plugins.sh"
 
-chsh /bin/zsh 
+chsh -s /bin/zsh 
 
 systemctl enable sddm 
 
+echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 echo "Now you are ready to reboot"
-echo "Do not forget to install node using 'nvm install 22'"
 
 sleep 5
