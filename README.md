@@ -39,7 +39,7 @@ cd hyperland
 
 
 ```bash
-./scripts/install
+. ./scripts/install
 ```
 
 You should be good to go afterwards.
