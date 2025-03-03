@@ -1,4 +1,5 @@
 google-chrome
+heroic-games-launcher-bin
 xwaylandvideobridge
 wlogout
 swaync
