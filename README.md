@@ -18,6 +18,11 @@ This configuration is aimed towards arch users with a minimal installation.
 
 Just clone this repo _https://github.com/HanmaDevin/hyprland.git_
 
+## Updating the Desktop
+
+You can simply run `. updateos` in your terminal.
+
+## Installation
 
 ```bash
 git clone https://github.com/HanmaDevin/hyprland.git ~/
