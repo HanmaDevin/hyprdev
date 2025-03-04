@@ -54,7 +54,8 @@ Keybind | Action
 <kbd>Super</kbd> + <kbd>E</kbd> | Open yazi (File Manager)
 <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating Window
 <kbd>Super</kbd> + <kbd>Space</kbd> | Open Application Launcher
-<kbd>Super</kbd> + <kbd>R</kbd> | Toggle split Orientation
+<kbd>Super</kbd> + <kbd>R</kbd> | Rotate Windows
+<kbd>Super</kbd> + <kbd>F</kbd> | Toggle Fullscreen
 <kbd>Super</kbd> + <kbd>H</kbd> | Move focus Left
 <kbd>Super</kbd> + <kbd>J</kbd> | Move focus Down
 <kbd>Super</kbd> + <kbd>K</kbd> | Move focus Up
