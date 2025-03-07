@@ -8,9 +8,9 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/weather": {
-    "restart-interval": 60,
+    "interval": 60,
     "format": "<span foreground='#fab387'>{}</span>",
-    "exec": "curl https://wttr.in/krefeld?format=1"
+    "exec": "curl https://wttr.in/?format=1",
   },
   "battery": {
     "states": {
