@@ -23,7 +23,7 @@ copy_config() {
   sudo cp -r "$HOME/hyprland/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
   sudo cp "$HOME/hyprland/sddm/sddm.conf" "/etc/"
   read -r -p "Are you using a Laptop? (y/n)" laptop
-  if [ $laptop == "y" ]; then
+  if [[ $laptop == "y" ]]; then
     cp "$HOME/hyprland/scripts/battery.sh" "$HOME/.config/hypr/"
   fi
 }
