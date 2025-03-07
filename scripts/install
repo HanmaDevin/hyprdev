@@ -21,6 +21,10 @@ copy_config() {
   cp -r "$HOME/hyprland/Pictures/Wallpaper/" "$HOME/Pictures/"
   sudo cp -r "$HOME/hyprland/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
   sudo cp "$HOME/hyprland/sddm/sddm.conf" "/etc/"
+  read -r -p "Are you using a Laptop? (y/n)" laptop
+  if [ $laptop == "y" ]; then
+    cp "$HOME/hyprland/scripts/battery.sh" "$HOME/.config/hypr/"
+  fi
 }
 
 install_yay(){
