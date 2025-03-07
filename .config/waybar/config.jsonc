@@ -28,7 +28,7 @@
     "on-click": "kitty -e nmtui"
   },
   "custom/power": {
-    "format": "<span size='13000' foreground='#cdd6f4'></span>",
+    "format": "<span size='13000' foreground='#cba6f7'></span>",
     "on-click": "wlogout"
   },
   "pulseaudio": {
@@ -58,5 +58,5 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-  }
+  },
 }
