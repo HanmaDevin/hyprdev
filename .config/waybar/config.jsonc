@@ -8,7 +8,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/weather": {
-    "interval": 60,
+    "restart-interval": 60,
     "format": "<span foreground='#fab387'>{}</span>",
     "exec": "curl https://wttr.in/?format=1",
   },
