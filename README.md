@@ -42,7 +42,7 @@ git clone https://github.com/HanmaDevin/hyprland.git ~/
 
 
 ```bash
-cd hyperland
+cd hyprland
 ```
 
 
