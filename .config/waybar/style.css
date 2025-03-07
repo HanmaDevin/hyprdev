@@ -60,6 +60,7 @@ button:hover {
 #bluetooth,
 #cpu,
 #custom-power,
+#custom-weather,
 #memory,
 #disk,
 #temperature,
@@ -81,7 +82,10 @@ button:hover {
     color: @mauve;
     border-bottom: 2px solid @mauve;
 }
-
+#custom-weather {
+    color: @peach;
+    border-bottom: 2px solid @peach;
+}
 #bluetooth {
     color: @maroon;
     border-bottom: 2px solid @maroon;

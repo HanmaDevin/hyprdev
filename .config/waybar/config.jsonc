@@ -2,10 +2,15 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["memory", "cpu", "network", "bluetooth", "pulseaudio", "battery", "clock", "custom/power"],
+  "modules-right": ["custom/weather", "network", "bluetooth", "pulseaudio", "battery", "clock", "custom/power"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/weather": {
+    "interval": 60,
+    "format": "<span foreground='#fab387'>{}</span>",
+    "exec": "curl https://wttr.in/krefeld?format=1"
   },
   "battery": {
     "states": {
