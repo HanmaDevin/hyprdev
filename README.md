@@ -5,6 +5,14 @@ Go to [keybindings](#keybinds)<br>
 If you want to change something just edit this file *~/.config/hypr/hyprland.conf* <br> 
 For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
 
+### Configuration
+
+If you want to configure this setup and change some stuff, you can find the most in the `~/.config` folder under the specific
+element. For example you want to change the weather location for the weather widget in the waybar configuration. You would then 
+go to the `~/.config/waybar/config.jsonc` file and change the `exec`-command specified in `custom/weather` to your location. This way everything is 
+relatively easy to configure. But if something is not clear feel free to open an issue and i'll do my best to resolve it or
+write a walkthrough on how to do it yourself.
+
 ## Prerequisite
 
 This configuration is aimed towards arch users with a minimal installation.
