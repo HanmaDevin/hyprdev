@@ -79,6 +79,11 @@ configure_git
 
 config_ufw
 install_nitch
+
+if [[ ! -d "$HOME/Pictures/Screenshots/" ]]; then 
+  mkdir -p "$HOME/Pictures/Screenshots/"
+fi
+
 copy_config
 install_themes
 add_tmux_tpm
