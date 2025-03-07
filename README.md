@@ -2,7 +2,7 @@
 
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br>
 Go to [keybindings](#keybinds)<br>
-If you want to change something just edit this file *~/.config/hypr/hyprland.conf* <br> 
+If you want to change something with the desktop just edit this file `~/.config/hypr/hyprland.conf` <br> 
 For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
 
 ### Configuration
