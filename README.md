@@ -35,6 +35,12 @@ in your terminal.
 
 ## Installation
 
+> [!IMPORTANT]
+> You need to press **y** to everything.
+
+> [!NOTE]
+> If not sure on a option if asked, just press Enter.
+
 ```bash
 git clone https://github.com/HanmaDevin/hyprland.git ~/
 ```
