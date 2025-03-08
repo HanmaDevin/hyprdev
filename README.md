@@ -38,10 +38,10 @@ in your terminal.
 ## Installation
 
 > [!IMPORTANT]
-> You need to press `y` to everything.
+> Please read carefully when you are prompted. Usually pressing `y` is a good choice.
 
 > [!NOTE]
-> If not sure on a option if asked, just press Enter.
+> If not sure on a option just press Enter. The defaults often are good.
 
 ```bash
 git clone https://github.com/HanmaDevin/hyprland.git ~/
