@@ -105,8 +105,6 @@ echo "Finished!"
 
 cat "$HOME/.ssh/id_ed25519.pub"
 
-bash "$HOME/hyprland/scripts/zsh-plugins.sh"
-
 chsh -s /bin/zsh 
 
 systemctl enable sddm 
