@@ -22,6 +22,8 @@ This configuration is aimed towards arch users with a minimal installation.
 ![screenshot](img/2025-02-27-184042_hyprshot.png)
 ![screenshot](img/2025-03-08-160157_hyprshot.png)
 ![screenshot](img/2025-03-08-160815_hyprshot.png)
+![screenshot](img/2025-03-08-183740_hyprshot.png)
+![screenshot](img/2025-03-08-183950_hyprshot.png)
 
 Just clone this repo _https://github.com/HanmaDevin/hyprland.git_
 
