@@ -13,8 +13,7 @@
     "interval": 3600,
     "exec": "~/.config/waybar/wttr.py",
     "return-type": "json"
-  }
-},
+  },
   "battery": {
     "states": {
       "warning": 30,
