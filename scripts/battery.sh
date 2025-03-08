@@ -8,7 +8,7 @@ while true; do
 	if [ "$BATSTATUS" == "Discharging" ]; then
 		if [ "$capacity" -le 20 ]; then
 		  notify-send "Battery Warning!" "Battery is at ${capacity}%"
-		  exit 9
+		  sleep 1800 
 		fi
 	fi
 done
