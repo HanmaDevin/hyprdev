@@ -2,7 +2,7 @@
 
 install_packages() {
   sudo pacman -Syu
-  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird")
+  packages=("zip" "hyprland" "hyprpaper" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "vlc" "xclip" "isoimagewriter" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird" "nwg-look")
 
   for package in "${packages[@]}"; do
 	sudo pacman -S "$package" --noconfirm || { echo "Failed to install $package"; }
@@ -22,6 +22,7 @@ copy_config() {
   cp -r "$HOME/hyprland/Pictures/Wallpaper/" "$HOME/Pictures/"
   sudo cp -r "$HOME/hyprland/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
   sudo cp "$HOME/hyprland/sddm/sddm.conf" "/etc/"
+  cp "$HOME/hyprland/nwg-look/gsettings" "$HOME/.local/share/nwg-look/"
   read -r -p "Are you using a Laptop? (y/n)" laptop
   if [[ $laptop == "y" ]]; then
     cp "$HOME/hyprland/scripts/battery.sh" "$HOME/.config/hypr/"
@@ -82,6 +83,10 @@ install_nitch
 
 if [[ ! -d "$HOME/Pictures/Screenshots/" ]]; then 
   mkdir -p "$HOME/Pictures/Screenshots/"
+fi
+
+if [[ ! -d "$HOME/.local/share/nwg-look/" ]]; then 
+  mkdir -p "$HOME/.local/share/nwg-look/"
 fi
 
 copy_config
