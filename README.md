@@ -36,7 +36,7 @@ in your terminal.
 ## Installation
 
 > [!IMPORTANT]
-> You need to press **y** to everything.
+> You need to press `y` to everything.
 
 > [!NOTE]
 > If not sure on a option if asked, just press Enter.
