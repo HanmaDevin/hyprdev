@@ -5,18 +5,22 @@ Go to [keybindings](#keybinds)<br>
 Go to [installation](#installation)<br><br>
 If you want to change something with the desktop just edit this file `~/.config/hypr/hyprland.conf` <br> 
 
-### Hyprland configuration
-
-[Here](https://wiki.hyprland.org/Configuring/) you can find everything regarding hyprland.<br>
-For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
-
-### Configuration
+## Configuration
 
 If you want to configure this setup and change some stuff, you can find the most in the `~/.config` folder under the specific
 element. For example you want to change the waybar configuration. You would then 
 go to the `~/.config/waybar/config.jsonc` file and change according to their wiki the modules you want. This way everything is 
 relatively easy to configure. But if something is not clear feel free to open an issue and i'll do my best to resolve it or
 write a walkthrough on how to do it yourself.
+
+> [!NOTE]
+> If you want you can make common sites in chrome like youtube and drive also have the catppuccin theme.
+> [Chrome Catppuccin](#catppuccin-chrome)
+
+### Hyprland configuration
+
+[Here](https://wiki.hyprland.org/Configuring/) you can find everything regarding hyprland.<br>
+For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
 
 > [!TIP]
 > You can google what you need :wink:
@@ -93,3 +97,17 @@ Keybind | Action
 <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[0-9]</kbd> | Move Window to Workspace [0-9]
 <kbd>Super</kbd> + <kbd>Right Click</kbd> | Resize Window with the Mouse
 <kbd>Super</kbd> + <kbd>Left Click</kbd> | Move Window with the Mouse
+
+
+## Catppuccin Chrome
+
+1. You need to add the *Stylus*-extension for chrome. 
+2. Then go to the *manage*-page of Stylus and click on *import*.
+3. Lastly import the file under the `chrome-sites` directory.
+
+### Catppuccin Thunderbird
+
+Also available for thunderbird.
+1. Open Thunderbird, go to Settings > Add-ons and Themes
+2. Click on the gear icon at the top-right corner and then select "Install Add-on From File..."
+3. Select the file under the `thunderbird` directory.
