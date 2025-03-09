@@ -107,7 +107,6 @@ Keybind | Action
 
 ### Catppuccin Thunderbird
 
-Also available for thunderbird.
 1. Open Thunderbird, go to Settings > Add-ons and Themes
 2. Click on the gear icon at the top-right corner and then select "Install Add-on From File..."
 3. Select the file under the `thunderbird` directory.
