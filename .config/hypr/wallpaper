@@ -10,4 +10,4 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" 
 hyprctl hyprpaper reload ,"$WALLPAPER"
 
 # For hyprlock to have the same Background
-cp $CURRENT_WALL  ~/.current_wallpaper
+cp $WALLPAPER ~/.current_wallpaper
