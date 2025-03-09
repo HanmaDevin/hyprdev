@@ -68,7 +68,6 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f
 export FZF_COMPLETION_PATH_OPTS="--walker file,dir,follow,hidden"
 export FZF_COMPLETION_DIR_OPTS="--walker dir,follow"
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:$HOME/.local/bin"
 nitch
 
@@ -100,6 +99,8 @@ alias editzsh="nvim ~/.zshrc"
 alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
+alias bt="bluetui"
+alias wifi="nmtui"
 
 alias projects="cd $HOME/Documents/Github/Projects"
 
