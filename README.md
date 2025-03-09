@@ -7,7 +7,7 @@ If you want to change something with the desktop just edit this file `~/.config/
 
 ### Hyprland configuration
 
-[Here](https://wiki.hyprland.org/Configuring/) you can find everything regarding hyprland.
+[Here](https://wiki.hyprland.org/Configuring/) you can find everything regarding hyprland.<br>
 For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
 
 ### Configuration
