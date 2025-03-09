@@ -46,6 +46,7 @@ configure_git() {
     git config --global user.name "$username"
     read -r -p "What is your email address? " useremail
     git config --global user.email "$useremail"
+    git config --global pull.rebase true
   fi
   
   read -r -p "Want to create ssh key? (y/n): " ssh
