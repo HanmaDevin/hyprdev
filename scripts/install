@@ -10,10 +10,9 @@ install_packages() {
 }
 
 config_ufw() {
-  sudo systemctl start ufw
+  sudo ufw enable
   sudo ufw default deny incoming
   sudo ufw default allow outgoing
-  sudo ufw enable
 }
 
 copy_config() {
