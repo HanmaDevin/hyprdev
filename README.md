@@ -42,7 +42,7 @@ write a walkthrough on how to do it yourself.
 > [!NOTE]
 > If not sure on an option just press Enter. The defaults often are good.
 <br>
-Copy these commands to your terminal and run them one by one 😃 <br>
+Copy these commands to your terminal and run them one by one 😃 <br><br>
 
 ```bash
 git clone https://github.com/HanmaDevin/hyprland.git ~/
