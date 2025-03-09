@@ -8,3 +8,6 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" 
 
 # Apply the selected wallpaper
 hyprctl hyprpaper reload ,"$WALLPAPER"
+
+# For hyprlock to have the same Background
+cp $CURRENT_WALL  ~/.current_wallpaper
