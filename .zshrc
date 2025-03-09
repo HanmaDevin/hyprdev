@@ -123,7 +123,6 @@ set -o vi
 # you may also use the following one
 bindkey -s '^o' 'nvim $(fzf)\n'
 bindkey -s '^e' 'yazi\n'
-bindkey -s '^r' 'history | fzf\n'
 
 # python environments
 alias startenv="source '$PWD/bin/activate'"
