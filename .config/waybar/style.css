@@ -87,13 +87,13 @@ button:hover {
     border-bottom: 2px solid @peach;
 }
 #bluetooth {
-    color: @sky;
-    border-bottom: 2px solid @sky;
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
 }
 
 #clock {
-    color: @maroon;
-    border-bottom: 2px solid @maroon;
+    color: @sky;
+    border-bottom: 2px solid @sky;
 }
 
 #clock.date {
