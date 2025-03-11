@@ -33,7 +33,7 @@ For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configur
 ## Screenshots
 
 ![screenshot](img/2025-02-27-184042_hyprshot.png)
-![screenshot](img/2025-03-10-230031_hyprshot.png)
+![screenshot](img/2025-03-11-170514_hyprshot.png)
 ![screenshot](img/2025-03-08-160815_hyprshot.png)
 ![screenshot](img/2025-03-08-183740_hyprshot.png)
 ![screenshot](img/2025-03-08-183950_hyprshot.png)
