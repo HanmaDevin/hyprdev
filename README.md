@@ -57,7 +57,8 @@ cd hyprland
 ```
 
 > [!CAUTION]
-> Make sure you clone into the `$HOME`-folder. The script depends on it. <br><br>
+> Make sure you clone into the `$HOME`-folder. The script depends on it.
+ <br><br>
 
 ```bash
 . ./scripts/install
