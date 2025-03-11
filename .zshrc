@@ -69,6 +69,7 @@ export FZF_COMPLETION_PATH_OPTS="--walker file,dir,follow,hidden"
 export FZF_COMPLETION_DIR_OPTS="--walker dir,follow"
 
 export PATH="$PATH:$HOME/.local/bin"
+
 nitch
 
 _fzf_comprun() {
@@ -117,8 +118,7 @@ alias q="exit"
 
 alias ..='z ..'
 
-# use vim keybinds
-set -o vi
+bindkey -d
 
 # you may also use the following one
 bindkey -s '^o' 'nvim $(fzf)\n'
