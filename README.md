@@ -20,7 +20,7 @@ write a walkthrough on how to do it yourself.
 ### Hyprland configuration
 
 [Here](https://wiki.hyprland.org/Configuring/) you can find everything regarding hyprland.<br>
-For multiple monitor settings refer to [this](https://wiki.hyprland.org/Configuring/Monitors/) site
+For multiple monitor configuration refer to [this](https://wiki.hyprland.org/Configuring/Monitors/)
 
 > [!TIP]
 > You can google what you need :wink:
