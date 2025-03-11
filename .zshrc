@@ -118,14 +118,11 @@ alias q="exit"
 
 alias ..='z ..'
 
-bindkey -d
-
 # you may also use the following one
 bindkey -s '^o' 'nvim $(fzf)\n'
 bindkey -s '^e' 'yazi\n'
 
 # python environments
-alias startenv="source '$PWD/bin/activate'"
 alias deac="deactivate"
 function createnv() {
   envpath=$1
