@@ -159,11 +159,3 @@ export NVM_DIR="$HOME/.nvm"
 # Source the Lazyman .nvimsbind for nvims key binding
 # shellcheck source=.config/nvim-Lazyman/.nvimsbind
 [ -f ~/.config/nvim-Lazyman/.nvimsbind ] && source ~/.config/nvim-Lazyman/.nvimsbind
-
-function zle-line-init zle-keymap-select {
-RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-RPS2=$RPS1
-zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
