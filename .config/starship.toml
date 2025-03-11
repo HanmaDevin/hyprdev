@@ -9,7 +9,6 @@ $git_status\
 $nodejs\
 $rust\
 $java\
-$docker\
 $golang\
 $python\
 $php\
@@ -85,11 +84,6 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
-
-[docker]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol( $context) ](fg:#769ff0 bg:#212736)]($style)'
 
 [python]
 symbol = ""
