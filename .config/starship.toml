@@ -8,7 +8,10 @@ $git_status\
 [](fg:#394260 bg:#212736)\
 $nodejs\
 $rust\
+$java\
+$docker\
 $golang\
+$python\
 $php\
 [](fg:#212736 bg:#1d2230)\
 $time\
@@ -68,6 +71,11 @@ symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
+[java]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol( $version) ](fg:#769ff0 bg:#212736)]($style)'
+
 [rust]
 symbol = ""
 style = "bg:#212736"
@@ -77,6 +85,16 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[docker]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol( $context) ](fg:#769ff0 bg:#212736)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol( $version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [php]
 symbol = ""
