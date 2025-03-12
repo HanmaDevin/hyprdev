@@ -75,7 +75,7 @@ Keybind | Action
 <kbd>Super</kbd> + <kbd>Backspace</kbd> | Open Logout-Menu
 <kbd>Super</kbd> + <kbd>E</kbd> | Open yazi (File Manager)
 <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating Window
-<kbd>Super</kbd> + <kbd>W</kbd> | Switch Windows
+<kbd>Super</kbd> + <kbd>W</kbd> | Reload Waybar (Status Bar)
 <kbd>Super</kbd> + <kbd>P</kbd> | Change Wallpaper randomly
 <kbd>Super</kbd> + <kbd>Space</kbd> | Open Application Launcher
 <kbd>Super</kbd> + <kbd>R</kbd> | Rotate Windows
