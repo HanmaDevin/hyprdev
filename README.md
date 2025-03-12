@@ -60,7 +60,7 @@ cd hyprland
 > Make sure you clone into the `$HOME`-folder. The script depends on it.
 
 ```bash
-. ./scripts/install
+./scripts/install
 ```
 
 <br>

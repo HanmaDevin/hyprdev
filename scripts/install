@@ -90,6 +90,11 @@ if [[ ! -d "$HOME/.local/share/nwg-look/" ]]; then
   mkdir -p "$HOME/.local/share/nwg-look/"
 fi
 
+if [[ -d "$HOME/.config/nvim" ]]; then 
+  cp -r "$HOME/.config/nvim" "$HOME/.config/nvim-bak"
+  rm -r "$HOME/.config/nvim"
+fi
+
 copy_config
 install_themes
 add_tmux_tpm
