@@ -143,7 +143,10 @@ chsh -s /bin/zsh
 
 systemctl enable sddm 
 systemctl enable NetworkManager
-systemctl enable bluetoothctl
+systemctl enable bluetooth
+
+systemctl start bluetooth
+systemctl start NetworkManager
 
 echo "Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
