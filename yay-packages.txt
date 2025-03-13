@@ -5,5 +5,6 @@ wlogout
 swaync
 hyprshot
 hyprscratch
+balena-etcher
 jetbrains-toolbox
 lazydocker
