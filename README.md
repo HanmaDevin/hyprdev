@@ -38,10 +38,10 @@ For multiple monitor configuration refer to [this](https://wiki.hyprland.org/Con
 ## Screenshots
 
 ![screenshot](img/2025-02-27-184042_hyprshot.png)
-![screenshot](img/2025-03-12-225944_hyprshot.png)
 ![screenshot](img/2025-03-08-160815_hyprshot.png)
 ![screenshot](img/2025-03-08-183740_hyprshot.png)
 ![screenshot](img/2025-03-08-183950_hyprshot.png)
+![screenshot](img/2025-03-13-194801_hyprshot.png)
 
 ## Installation
 
