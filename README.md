@@ -13,6 +13,11 @@ go to the `~/.config/waybar/config.jsonc` file and change according to their wik
 relatively easy to configure. But if something is not clear feel free to open an issue and i'll do my best to resolve it or
 write a walkthrough on how to do it yourself.
 
+### Disclaimer
+
+I love vim and the philosophy about only using the keyboard hence why most of the programs I setup use vimkeys.
+If you don't like that (which I think you do :upside_down_face:) then you might need to reconfigure a lot.
+
 > [!NOTE]
 > If you want you can make common sites in chrome like youtube and drive also have the catppuccin theme.
 > [Chrome Catppuccin](#catppuccin-chrome)
