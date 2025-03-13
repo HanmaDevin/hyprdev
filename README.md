@@ -65,11 +65,15 @@ cd hyprland
 > Make sure you clone into the `$HOME`-folder. The script depends on it.
 
 > [!CAUTION]
-> Please use Grub for a more complete setup :grin:
+> Please make sure to select Grub during arch-installation for a more complete setup :grin:
 
 ```bash
 ./scripts/install
 ```
+
+### Nvidia
+
+The install script scans for nvidia hardware and installs the driver for you :kiss:
 
 <br>
 You should be good to go afterwards. :shipit:
