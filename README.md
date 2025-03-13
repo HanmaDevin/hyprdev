@@ -66,6 +66,7 @@ cd hyprland
 
 > [!CAUTION]
 > Please make sure to select Grub during arch-installation for a more complete setup :grin:
+> And make sure to check NetworkManager during arch installation!
 
 ```bash
 ./scripts/install
