@@ -9,6 +9,21 @@ install_packages() {
   done
 }
 
+detect_nvidia() {
+  gpu=$(lspci | grep -i '.* vga .* nvidia .*')
+
+  shopt -s nocasematch
+
+  if [[ $gpu == *' nvidia '* ]]; then
+    echo "Nvidia GPU is present"
+    echo "Downloading nvidia drivers..."
+    sudo pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
+  else
+    echo "It seems you are not having a Nvidia GPU"
+    echo "If you have a Nvidia GPU then download the drivers yourself please :)"
+  fi
+}
+
 config_ufw() {
   sudo ufw enable
   sudo ufw default deny incoming
@@ -88,6 +103,7 @@ add_tmux_tpm() {
 }
 
 install_packages
+detect_nvidia
 configure_git
 
 config_ufw
