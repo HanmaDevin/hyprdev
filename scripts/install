@@ -32,7 +32,7 @@ copy_config() {
   if [[ ! -d "/usr/share/grub/themes" ]]; then
     sudo mkdir -p "/usr/share/grub/themes"
   fi
-  sudo cp -r "$HOME/hyprland/grub/themes/" "/usr/share/grub/themes"
+  sudo cp -r "$HOME/hyprland/grub/themes/*" "/usr/share/grub/themes"
   sudo cp "$HOME/hyprland/grub/grub" "/etc/default/grub"
   if [[ ! -d "/boot/grub" ]]; then
     sudo mkdir -p "/boot/grub/"
