@@ -29,10 +29,10 @@ copy_config() {
     cp "$HOME/hyprland/scripts/battery.sh" "$HOME/.config/hypr/"
   fi
 
-  if [[ ! -d "/usr/share/grub/themes" ]]; then
-    sudo mkdir -p "/usr/share/grub/themes"
+  if [[ ! -d "/usr/share/grub/" ]]; then
+    sudo mkdir -p "/usr/share/grub/"
   fi
-  sudo cp -r "$HOME/hyprland/grub/themes/*" "/usr/share/grub/themes"
+  sudo cp -r "$HOME/hyprland/grub/themes/" "/usr/share/grub/"
   sudo cp "$HOME/hyprland/grub/grub" "/etc/default/grub"
   if [[ ! -d "/boot/grub" ]]; then
     sudo mkdir -p "/boot/grub/"
