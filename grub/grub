@@ -1,0 +1,3 @@
+GRUB_THEME="/usr/share/grub/themes/catppuccin-mocha-grub-theme/theme.txt"
+GRUB_DISABLE_OS_PROBER=false
+GRUB_TIMEOUT=3
