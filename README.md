@@ -61,8 +61,11 @@ git clone https://github.com/HanmaDevin/hyprland.git ~/
 cd hyprland
 ```
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Make sure you clone into the `$HOME`-folder. The script depends on it.
+
+> [!CAUTION]
+> Please use Grub for a more complete setup :grin:
 
 ```bash
 ./scripts/install
