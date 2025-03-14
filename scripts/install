@@ -84,6 +84,7 @@ configure_git() {
 
 install_themes() {
   sudo cp "$HOME/hyprland/Fonts/MesloLGS NF Regular.ttf" "/usr/share/fonts"
+  sudo cp "$HOME/hyprland/Fonts/NotoColorEmoji-Regular.ttf" "/usr/share/fonts"
   sudo cp -r "$HOME/hyprland/Cursor/Bibata-Modern-Ice" "/usr/share/icons"
   
   echo "Installing Vencord..."
