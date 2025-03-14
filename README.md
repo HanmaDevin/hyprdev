@@ -65,8 +65,7 @@ cd hyprland
 > Make sure you clone into the `$HOME`-folder. The script depends on it.
 
 > [!CAUTION]
-> Please make sure to select Grub during arch-installation for a more complete setup :grin:
-> And make sure to check NetworkManager during arch installation!
+> Please make sure to select *Grub* & *NetworkManager* during arch-installation for a more complete setup :grin:
 
 ```bash
 ./scripts/install
