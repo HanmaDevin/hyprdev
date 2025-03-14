@@ -629,6 +629,7 @@ require('lazy').setup({
         jedi_language_server = {},
         bashls = {},
         ast_grep = {},
+        html = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
