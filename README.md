@@ -66,6 +66,7 @@ cd hyprland
 
 > [!CAUTION]
 > Please make sure to select *Grub* & *NetworkManager* during arch-installation for a more complete setup :grin:
+> Don't forget to use *pulseaudio* during the installation.
 
 ```bash
 ./scripts/install
