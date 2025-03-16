@@ -19,7 +19,7 @@ detect_nvidia() {
     echo "Downloading nvidia drivers..."
     sudo pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
   else
-    echo "It seems you are not having a Nvidia GPU"
+    echo "It seems you are not using a Nvidia GPU"
     echo "If you have a Nvidia GPU then download the drivers yourself please :)"
   fi
 }
