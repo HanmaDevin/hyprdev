@@ -3,7 +3,7 @@ open = [
   { run = 'okular "$@"'},
 ]
 play = [
-  { run = 'vlc "$@"', orphan = true, for = "unix" },
+  { run = 'celluloid "$@"', orphan = true, for = "unix" },
 ]
 edit = [
   {run = 'nvim "$@"', block = true },
