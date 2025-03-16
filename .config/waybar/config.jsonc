@@ -42,6 +42,8 @@
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-muted": "",
+    "format-source": " {volume}%",
+    "format-source-muted": "  Mute",
     "format-icons": {
       "default": ["", "", " "]
     },
