@@ -1,7 +1,14 @@
-# My Hyprland :trollface:
+# My Hyprland
 
-![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+![Arch](https://img.shields.io/badge/Arch-blue?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
+![Hyprland](https://img.shields.io/badge/hyprland-blue?style=for-the-badge&logo=hyprland&logoColor=white&logoSize=auto&color=%2358E1FF)
+![Wayland](https://img.shields.io/badge/wayland-yellow?style=for-the-badge&logo=wayland&logoColor=white&logoSize=auto&color=%23FFBC00)
+
+![commits](https://img.shields.io/github/commit-activity/t/HanmaDevin/hyprland)
+![LastCommit](https://img.shields.io/github/last-commit/HanmaDevin/hyprland)
+![Created](https://img.shields.io/github/created-at/HanmaDevin/hyprland)
+![RepoSize](https://img.shields.io/github/repo-size/HanmaDevin/hyprland)
 
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br><br>
 Go to [keybindings](#keybinds)<br>
