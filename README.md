@@ -84,7 +84,8 @@ cd hyprland
 
 ### Nvidia
 
-The install script scans for nvidia hardware and installs the driver for you :kiss:
+The install script scans for nvidia hardware and installs the driver for you,
+assuming you are using the arch-linux kernel :kiss:
 
 <br>
 You should be good to go afterwards. :shipit:
