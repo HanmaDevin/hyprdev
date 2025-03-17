@@ -12,7 +12,7 @@
 
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br><br>
 Go to [keybindings](#keybinds)<br>
-Go to [installation](#installation)<br><br>
+Go to [installation](#installation)
 Go to [troubleshoot](#troubleshoot)<br><br>
 If you want to change something with the desktop just edit this file `~/.config/hypr/hyprland.conf` <br> 
 
@@ -76,8 +76,8 @@ cd hyprland
 > Make sure you clone into the `$HOME`-folder. The script depends on it.
 
 > [!CAUTION]
-> Please make sure to select *Grub* & *NetworkManager* during arch-installation for a more complete setup :grin:
-> Don't forget to use *pulseaudio* during the installation.
+> Please make sure to select `Grub` & `NetworkManager` during arch-installation for a more complete setup :grin:
+> Don't forget to use `pulseaudio` during the installation.
 
 ```bash
 ./scripts/install
@@ -103,6 +103,11 @@ If connecting a device and it is not showing up in `pavucontrol` do the followin
 pulseaudio -k
 systemctl restart bluetooth
 ```
+
+### Waybar Weather Widget
+
+Weather widget not loading on startup because pc still not connected to wifi.
+Just hit the waybar reload keybind `Super + W` or wait an hour.
 
 ## Keybinds
 
