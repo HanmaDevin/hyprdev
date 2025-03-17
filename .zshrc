@@ -70,7 +70,7 @@ export FZF_COMPLETION_DIR_OPTS="--walker dir,follow"
 
 export PATH="$PATH:$HOME/.local/bin"
 
-fastfetch --config arch
+fastfetch
 
 _fzf_comprun() {
   local command=$1
