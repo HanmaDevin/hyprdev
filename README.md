@@ -12,7 +12,7 @@
 
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br><br>
 Go to [keybindings](#keybinds)<br>
-Go to [installation](#installation)
+Go to [installation](#installation)<br>
 Go to [troubleshoot](#troubleshoot)<br><br>
 If you want to change something with the desktop just edit this file `~/.config/hypr/hyprland.conf` <br> 
 
