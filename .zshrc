@@ -100,7 +100,7 @@ alias editzsh="nvim ~/.zshrc"
 alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
-alias bt="bluetui"
+alias bt="bluetuith"
 alias wifi="nmtui"
 
 alias projects="cd $HOME/Documents/Github/Projects"
