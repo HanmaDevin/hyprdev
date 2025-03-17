@@ -119,6 +119,11 @@ systemctl restart bluetooth
 Weather widget not loading on startup because pc still not connected to wifi.
 Just hit the waybar reload keybind `Super + W` or wait an hour.
 
+### GTK Apps not being dark
+
+This is kind of stupid even though it's set during installation, it only takes real effect when manually applied
+through the `GTK Setings`-App. Just open it and click on `apply`.
+
 ## Keybinds
 
 Keybind | Action
