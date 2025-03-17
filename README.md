@@ -91,6 +91,16 @@ assuming you are using the arch-linux kernel :kiss:
 <br>
 You should be good to go afterwards. :shipit:
 
+## Gaming
+
+There are basic gaming apps like steam installed. For the most part gaming works just fine out of the box
+as usually espected with linux. Use this launch option on every game `gamemoderun mangohud %COMMAND%`.
+For CS2 I added `-fullscreen -sdlaudiodriver pulseaudio` to combat sound issues.
+
+Setting up anything other than steam the best thing to do is to install the appropiate app via wine.
+Download the .exe file and install like so `wine thewindowsgamingapp.exe`. Steam will then recognize the app
+and use it as the launcher just as windows would do it.
+
 ## Troubleshoot
 
 Hyprland sometimes can be problematic so here you can find some problems and how to fix them.
