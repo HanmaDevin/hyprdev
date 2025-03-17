@@ -2,7 +2,7 @@
 
 install_packages() {
   sudo pacman -Syu
-  packages=("zip" "hyprland" "hyprpaper" "grub" "os-prober" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "hyprpolkitagent" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "celluloid" "xclip" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird" "nwg-look" "thunar" "bluetui" "python-pip" "python-requests" "python-pipx" "pavucontrol" "openssh" "pulseaudio" "pulseaudio-bluetooth" "pulseaudio-jack" "pulseaudio-alsa" "pactl" "pamixer" "ttf-font-awesome" "ttf-nerd-fonts-symbols" "ttf-jetbrains-mono-nerd" "ttf-meslo-nerd" "noto-fonts-emoji" "7zip" "wireplumber")
+  packages=("zip" "fastfetch" "hyprland" "hyprpaper" "grub" "os-prober" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "hyprpolkitagent" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "celluloid" "xclip" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird" "nwg-look" "thunar" "bluetui" "python-pip" "python-requests" "python-pipx" "pavucontrol" "openssh" "pulseaudio" "pulseaudio-bluetooth" "pulseaudio-jack" "pulseaudio-alsa" "pactl" "pamixer" "ttf-font-awesome" "ttf-nerd-fonts-symbols" "ttf-jetbrains-mono-nerd" "ttf-meslo-nerd" "noto-fonts-emoji" "7zip" "wireplumber")
 
   for package in "${packages[@]}"; do
 	sudo pacman -S "$package" --noconfirm || { echo "Failed to install $package"; }
@@ -59,12 +59,6 @@ install_yay(){
   sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 }
 
-install_nitch() {
-	echo "Installing nitch..."
-	wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
-	echo "Finished!"
-}
-
 configure_git() {
   read -r -p "Want to configure git? (y/n): " gitconfig
   if [[ $gitconfig == "y" ]]; then
@@ -106,7 +100,6 @@ detect_nvidia
 configure_git
 
 config_ufw
-install_nitch
 
 if [[ ! -d "$HOME/Pictures/Screenshots/" ]]; then 
   mkdir -p "$HOME/Pictures/Screenshots/"
