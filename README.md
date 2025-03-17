@@ -13,6 +13,7 @@
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br><br>
 Go to [keybindings](#keybinds)<br>
 Go to [installation](#installation)<br><br>
+Go to [troubleshoot](#troubleshoot)<br><br>
 If you want to change something with the desktop just edit this file `~/.config/hypr/hyprland.conf` <br> 
 
 ## Configuration
@@ -89,6 +90,19 @@ assuming you are using the arch-linux kernel :kiss:
 
 <br>
 You should be good to go afterwards. :shipit:
+
+## Troubleshoot
+
+Hyprland sometimes can be problematic so here you can find some problems and how to fix them.
+
+### Bluetooth
+
+If connecting a device and it is not showing up in `pavucontrol` do the following:
+
+```bash
+pulseaudio -k
+systemctl restart bluetooth
+```
 
 ## Keybinds
 
