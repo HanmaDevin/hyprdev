@@ -74,6 +74,11 @@ configure_git() {
   if [[ $ssh == "y" ]]; then
     ssh-keygen -t ed25519 -C "$useremail"
   fi
+
+  read -r -p "Want to create a physical key? (y/n): " key
+  if [[ $key == "y" ]]; then
+    ssh-keygen -t ecdsa-sk -b 521
+  fi
 }
 
 
