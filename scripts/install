@@ -120,8 +120,6 @@ if [[ -d "$HOME/.config/nvim" ]]; then
   rm -r "$HOME/.config/nvim"
 fi
 
-echo "Create build directory for other PKGBUILDs..."
-mkdir -p "/mtp/build"
 
 copy_config
 install_themes
