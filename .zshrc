@@ -97,6 +97,7 @@ alias remove="sudo pacman -Rns --noconfirm"
 alias update="sudo pacman -Syu"
 
 alias editzsh="nvim ~/.zshrc"
+alias edithyprland="nvim ~/.config/hypr/hyprland.conf"
 alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
@@ -108,7 +109,7 @@ alias projects="cd $HOME/Documents/Github/Projects"
 alias g="geany"
 alias lg="lazygit"
 alias ya="yazi"
-alias ld="lazydocker"
+alias ld="sudo lazydocker"
 
 # visual
 alias open="xdg-open"
@@ -117,6 +118,8 @@ alias bat='bat -p --color=always --theme="Dracula"'
 alias q="exit"
 
 alias ..='z ..'
+
+alias startdocker="systemctl start docker"
 
 # you may also use the following one
 bindkey -s '^o' 'nvim $(fzf)\n'
