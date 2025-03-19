@@ -161,6 +161,21 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 20
 
+-- Hyprlang LSP
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
+  pattern = { '*.hl', 'hypr*.conf' },
+  callback = function(event)
+    print(string.format('starting hyprls for %s', vim.inspect(event)))
+    vim.lsp.start {
+      name = 'hyprlang',
+      cmd = { 'hyprls' },
+      root_dir = vim.fn.getcwd(),
+    }
+  end,
+})
+vim.filetype.add {
+  pattern = { ['.*/hypr/.*%.conf'] = 'hyprlang' },
+}
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -187,6 +202,8 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'LazyGit' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Delete Buffer' })
+
+vim.keymap.set('n', '<leader>md', ':MarkdownPreviewToggle<CR>', { desc = 'Preview markdown in Browser' })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -630,6 +647,7 @@ require('lazy').setup({
         bashls = {},
         ast_grep = {},
         html = {},
+        hyprls = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
