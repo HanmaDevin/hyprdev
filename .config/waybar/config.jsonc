@@ -4,7 +4,7 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["custom/weather", "network", "bluetooth", "pulseaudio", "battery", "clock", "custom/power"],
   "clock": {
-    "format": "<span foreground='#89dceb'>  </span>{:%a %d %H:%M}",
+    "format": "<span foreground='#89dceb'> </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/weather": {
@@ -35,12 +35,12 @@
     "on-click": "kitty -e nmtui"
   },
   "custom/power": {
-    "format": "<span size='13000' foreground='#cba6f7'>  Power</span>",
+    "format": "<span size='13000' foreground='#cba6f7'> Power</span>",
     "on-click": "wlogout",
     "tooltip": false
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
     "format-muted": "",
     "format-source": " {volume}%",
     "format-source-muted": "  Mute",
@@ -52,7 +52,7 @@
   "bluetooth": {
     "format": " {status}",
     "format-connected": " {device_alias}",
-    "format-connected-battery": "  {device_alias} {device_battery_percentage}%",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
