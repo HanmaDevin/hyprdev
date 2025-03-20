@@ -4,7 +4,7 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["custom/weather", "network", "bluetooth", "pulseaudio", "battery", "clock", "custom/power"],
   "clock": {
-    "format": "<span foreground='#89dceb'> </span>{:%a %d %H:%M}",
+    "format": "<span foreground='#89dceb'>  </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/weather": {
@@ -35,7 +35,7 @@
     "on-click": "kitty -e nmtui"
   },
   "custom/power": {
-    "format": "<span size='13000' foreground='#cba6f7'> Power</span>",
+    "format": "<span size='13000' foreground='#cba6f7'>  Power</span>",
     "on-click": "wlogout",
     "tooltip": false
   },
