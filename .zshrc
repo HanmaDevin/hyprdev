@@ -136,6 +136,8 @@ function createnv() {
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 
+export EDITOR=nvim
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
