@@ -1,0 +1,6 @@
+#%PAM-1.0
+
+auth 		sufficient	pam_u2f.so cue prompt authfile=.config/u2f/u2f_keys
+auth		include		system-auth
+account		include		system-auth
+session		include		system-auth
