@@ -77,7 +77,7 @@ cd hyprland
 
 > [!CAUTION]
 > Please make sure to select `Grub` & `NetworkManager` during arch-installation for a more complete setup :grin:
-> Don't forget to use `pulseaudio` during the installation.
+> Don't forget to use `pipewire` during the installation.
 
 ```bash
 ./scripts/install
@@ -95,7 +95,6 @@ You should be good to go afterwards. :shipit:
 
 There are basic gaming apps like steam installed. For the most part gaming works just fine out of the box
 as usually espected with linux. Use this launch option on every game `gamemoderun mangohud %COMMAND%`.
-For CS2 I added `-fullscreen -sdlaudiodriver pulseaudio` to combat sound issues.
 
 Setting up anything other than steam the best thing to do is to install the appropiate app via wine.
 Download the .exe file and install like so `wine thewindowsgamingapp.exe`. Steam will then recognize the app
@@ -104,15 +103,6 @@ and use it as the launcher just as windows would do it.
 ## Troubleshoot
 
 Hyprland sometimes can be problematic so here you can find some problems and how to fix them.
-
-### Bluetooth
-
-If connecting a device and it is not showing up in `pavucontrol` do the following:
-
-```bash
-pulseaudio -k
-systemctl restart bluetooth
-```
 
 ### Waybar Weather Widget
 
