@@ -11,7 +11,7 @@
     "format": "{}",
     "tooltip": true,
     "interval": 3600,
-    "exec": "~/.config/waybar/wttr.py",
+    "exec": "sleep 10 && ~/.config/waybar/wttr.py",
     "return-type": "json"
   },
   "battery": {
