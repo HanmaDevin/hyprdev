@@ -2,7 +2,7 @@
 
 install_packages() {
   sudo pacman -Syu
-  packages=("zip" "fastfetch" "hyprland" "hyprpaper" "grub" "os-prober" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "hyprpolkitagent" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "kitty" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "celluloid" "xclip" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird" "nwg-look" "thunar" "bluez-obex" "python-pip" "python-requests" "python-pipx" "pavucontrol" "openssh" "pam-u2f" "pipewire-jack" "pipewire" "pactl" "pamixer" "ttf-font-awesome" "ttf-nerd-fonts-symbols" "ttf-jetbrains-mono-nerd" "noto-fonts-emoji" "7zip" "wireplumber" "libfido2" "qt5-wayland" "qt6-wayland" "calc" "udiskie" "gnome-keyring" "piper")
+  packages=("zip" "fastfetch" "hyprland" "hyprpaper" "grub" "os-prober" "hyprlock" "wofi" "waybar" "ntfs-3g" "tree" "discord" "lazygit" "ufw" "zsh" "unzip" "wget" "stow" "curl" "yazi" "hyprpolkitagent" "neovim" "eza" "btop" "gamemode" "steam" "mangohud" "zoxide" "fzf" "bat" "wezterm" "geany" "geany-plugins" "tmux" "jdk23-openjdk" "docker" "ripgrep" "cargo" "fd" "sddm" "starship" "okular" "celluloid" "xclip" "hypridle" "pinta" "bluez" "bluez-utils" "networkmanager" "brightnessctl" "wine" "thunderbird" "nwg-look" "thunar" "bluez-obex" "python-pip" "python-requests" "python-pipx" "pavucontrol" "openssh" "pam-u2f" "pipewire-jack" "pipewire" "pactl" "pamixer" "ttf-font-awesome" "ttf-nerd-fonts-symbols" "ttf-jetbrains-mono-nerd" "noto-fonts-emoji" "7zip" "wireplumber" "libfido2" "qt5-wayland" "qt6-wayland" "calc" "udiskie" "gnome-keyring" "piper")
 
   for package in "${packages[@]}"; do
 	sudo pacman -S "$package" --noconfirm || { echo "Failed to install $package"; }
@@ -33,11 +33,11 @@ config_ufw() {
 
 copy_config() {
   cp "$HOME/hyprdev/.zshrc" "$HOME/"
+  cp "$HOME/hyprdev/.wezterm.lua" "$HOME/"
   cp -r "$HOME/hyprdev/.config" "$HOME/"
   cp -r "$HOME/hyprdev/Pictures/Wallpaper/" "$HOME/Pictures/"
   sudo cp -r "$HOME/hyprdev/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
   sudo cp -r "$HOME/hyprdev/Icons/Catppuccin-Mocha/" "/usr/share/icons/"
-  sudo cp "$HOME/hyprdev/pulse/daemon.conf" "/etc/pulse/"
   sudo cp "$HOME/hyprdev/sddm/sddm.conf" "/etc/"
   cp "$HOME/hyprdev/nwg-look/gsettings" "$HOME/.local/share/nwg-look/"
   read -r -p "Are you using a Laptop? (y/n)" laptop
@@ -70,12 +70,13 @@ configure_git() {
     git config --global pull.rebase true
   fi
   
-  read -r -p "Want to create ssh key? (y/n): " ssh
+  read -r -p "Want to create a ssh key? (y/n): " ssh
   if [[ $ssh == "y" ]]; then
     ssh-keygen -t ed25519 -C "$useremail"
   fi
 
   read -r -p "Want to create a physical key? (y/n): " key
+  read -r -p "Insert a key and press enter..." 
   if [[ $key == "y" ]]; then
     ssh-keygen -t ecdsa-sk -b 521
   fi
