@@ -104,11 +104,6 @@ and use it as the launcher just as windows would do it.
 
 Hyprland sometimes can be problematic so here you can find some problems and how to fix them.
 
-### Waybar Weather Widget
-
-Weather widget not loading on startup because pc still not connected to wifi.
-Just hit the waybar reload keybind `Super + W` or wait an hour.
-
 ### GTK Apps not being dark
 
 This is kind of stupid even though it's set during installation, it only takes real effect when manually applied
