@@ -2,5 +2,3 @@
 # the 'login' configuration file (see /etc/pam.d/login)
 
 auth        required    pam_u2f.so      authfile=.config/u2f/u2f_keys
-auth        include     login
-
