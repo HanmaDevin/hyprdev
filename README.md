@@ -4,6 +4,8 @@
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/hyprland-blue?style=for-the-badge&logo=hyprland&logoColor=white&logoSize=auto&color=%2358E1FF)
 ![Wayland](https://img.shields.io/badge/wayland-yellow?style=for-the-badge&logo=wayland&logoColor=white&logoSize=auto&color=%23FFBC00)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ![commits](https://img.shields.io/github/commit-activity/t/HanmaDevin/hyprdev)
 ![LastCommit](https://img.shields.io/github/last-commit/HanmaDevin/hyprdev)
@@ -103,6 +105,10 @@ and use it as the launcher just as windows would do it.
 ## Troubleshoot
 
 Hyprland sometimes can be problematic so here you can find some problems and how to fix them.
+
+### CS2
+
+Maybe you will experience sound and/or mouse issues to solve that add these launch options `-sdlaudiodriver pulseaudio -sdlvideodriver x11` after the `%COMMAND%` part
 
 ### GTK Apps not being dark
 
