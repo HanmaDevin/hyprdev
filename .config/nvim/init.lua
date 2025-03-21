@@ -114,6 +114,7 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'LazyGit' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Delete Buffer' })
+vim.keymap.set('n', '<leader>tt', ':TransparentToggle<CR>', { desc = 'Toggle Transparency' })
 
 vim.keymap.set('n', '<leader>md', ':MarkdownPreviewToggle<CR>', { desc = 'Preview markdown in Browser' })
 
