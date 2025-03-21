@@ -1,7 +1,7 @@
 #%PAM-1.0
 
 
-auth        required  pam_u2f.so              authfile=.config/u2f/u2f_keys
+auth        sufficient  pam_u2f.so              authfile=.config/u2f/u2f_keys
 auth        include     system-login
 -auth       optional    pam_gnome_keyring.so
 -auth       optional    pam_kwallet5.so
