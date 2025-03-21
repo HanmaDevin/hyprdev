@@ -1,14 +1,14 @@
-# My Hyprland
+# HyprDev
 
 ![Arch](https://img.shields.io/badge/Arch-blue?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/hyprland-blue?style=for-the-badge&logo=hyprland&logoColor=white&logoSize=auto&color=%2358E1FF)
 ![Wayland](https://img.shields.io/badge/wayland-yellow?style=for-the-badge&logo=wayland&logoColor=white&logoSize=auto&color=%23FFBC00)
 
-![commits](https://img.shields.io/github/commit-activity/t/HanmaDevin/hyprland)
-![LastCommit](https://img.shields.io/github/last-commit/HanmaDevin/hyprland)
-![Created](https://img.shields.io/github/created-at/HanmaDevin/hyprland)
-![RepoSize](https://img.shields.io/github/repo-size/HanmaDevin/hyprland)
+![commits](https://img.shields.io/github/commit-activity/t/HanmaDevin/hyprdev)
+![LastCommit](https://img.shields.io/github/last-commit/HanmaDevin/hyprdev)
+![Created](https://img.shields.io/github/created-at/HanmaDevin/hyprdev)
+![RepoSize](https://img.shields.io/github/repo-size/HanmaDevin/hyprdev)
 
 This is my personal hyrpland configuration. It is heavily inspired by [typecraft](https://www.youtube.com/@typecraft_dev). <br><br>
 Go to [keybindings](#keybinds)<br>
@@ -65,11 +65,11 @@ For multiple monitor configuration refer to [this](https://wiki.hyprland.org/Con
 Copy these commands to your terminal and run them one by one 😃 <br><br>
 
 ```bash
-git clone https://github.com/HanmaDevin/hyprland.git ~/
+git clone https://github.com/HanmaDevin/hyprdev.git ~/
 ```
 
 ```bash
-cd hyprland
+cd hyprdev
 ```
 
 > [!IMPORTANT]
@@ -77,7 +77,7 @@ cd hyprland
 
 > [!CAUTION]
 > Please make sure to select `Grub` & `NetworkManager` during arch-installation for a more complete setup :grin:
-> Don't forget to use `pipewire` during the installation.
+> Don't forget to use `pipewire` or no audio-server configuration during the installation.
 
 ```bash
 ./scripts/install
@@ -94,7 +94,7 @@ You should be good to go afterwards. :shipit:
 ## Gaming
 
 There are basic gaming apps like steam installed. For the most part gaming works just fine out of the box
-as usually espected with linux. Use this launch option on every game `gamemoderun mangohud %COMMAND%`.
+as usually espected with linux. Use this `gamemoderun mangohud %COMMAND%` launch option on every game in steam.
 
 Setting up anything other than steam the best thing to do is to install the appropiate app via wine.
 Download the .exe file and install like so `wine thewindowsgamingapp.exe`. Steam will then recognize the app
@@ -112,7 +112,7 @@ Just hit the waybar reload keybind `Super + W` or wait an hour.
 ### GTK Apps not being dark
 
 This is kind of stupid even though it's set during installation, it only takes real effect when manually applied
-through the `GTK Setings`-App. Just open it and click on `apply`.
+through the `GTK Settings`-App. Just open it and click on `apply`.
 
 ## Keybinds
 

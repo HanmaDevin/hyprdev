@@ -32,24 +32,24 @@ config_ufw() {
 }
 
 copy_config() {
-  cp "$HOME/hyprland/.zshrc" "$HOME/"
-  cp -r "$HOME/hyprland/.config" "$HOME/"
-  cp -r "$HOME/hyprland/Pictures/Wallpaper/" "$HOME/Pictures/"
-  sudo cp -r "$HOME/hyprland/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
-  sudo cp -r "$HOME/hyprland/Icons/Catppuccin-Mocha/" "/usr/share/icons/"
-  sudo cp "$HOME/hyprland/pulse/daemon.conf" "/etc/pulse/"
-  sudo cp "$HOME/hyprland/sddm/sddm.conf" "/etc/"
-  cp "$HOME/hyprland/nwg-look/gsettings" "$HOME/.local/share/nwg-look/"
+  cp "$HOME/hyprdev/.zshrc" "$HOME/"
+  cp -r "$HOME/hyprdev/.config" "$HOME/"
+  cp -r "$HOME/hyprdev/Pictures/Wallpaper/" "$HOME/Pictures/"
+  sudo cp -r "$HOME/hyprdev/sddm/catppuccin-mocha/" "/usr/share/sddm/themes/"
+  sudo cp -r "$HOME/hyprdev/Icons/Catppuccin-Mocha/" "/usr/share/icons/"
+  sudo cp "$HOME/hyprdev/pulse/daemon.conf" "/etc/pulse/"
+  sudo cp "$HOME/hyprdev/sddm/sddm.conf" "/etc/"
+  cp "$HOME/hyprdev/nwg-look/gsettings" "$HOME/.local/share/nwg-look/"
   read -r -p "Are you using a Laptop? (y/n)" laptop
   if [[ $laptop == "y" ]]; then
-    cp "$HOME/hyprland/scripts/battery.sh" "$HOME/.config/hypr/"
+    cp "$HOME/hyprdev/scripts/battery.sh" "$HOME/.config/hypr/"
   fi
 
   if [[ ! -d "/usr/share/grub/" ]]; then
     sudo mkdir -p "/usr/share/grub/"
   fi
-  sudo cp -r "$HOME/hyprland/grub/themes/" "/usr/share/grub/"
-  sudo cp "$HOME/hyprland/grub/grub" "/etc/default/grub"
+  sudo cp -r "$HOME/hyprdev/grub/themes/" "/usr/share/grub/"
+  sudo cp "$HOME/hyprdev/grub/grub" "/etc/default/grub"
   if [[ ! -d "/boot/grub" ]]; then
     sudo mkdir -p "/boot/grub/"
   fi
@@ -83,13 +83,13 @@ configure_git() {
 
 
 install_themes() {
-  sudo cp -r "$HOME/hyprland/Cursor/Bibata-Modern-Ice" "/usr/share/icons"
+  sudo cp -r "$HOME/hyprdev/Cursor/Bibata-Modern-Ice" "/usr/share/icons"
   
   echo "Installing Vencord..."
 
-  bash "$HOME/hyprland/Vencord/VencordInstaller.sh"
+  bash "$HOME/hyprdev/Vencord/VencordInstaller.sh"
 
-  cp -r "$HOME/hyprland/Vencord/themes/" "$HOME/.config/Vencord/"
+  cp -r "$HOME/hyprdev/Vencord/themes/" "$HOME/.config/Vencord/"
 
   echo "Done!"
 
@@ -132,7 +132,7 @@ echo "Done"
 install_yay
 
 echo "Installing packages from yay"
-yay -S --noconfirm $(cat "$HOME/hyprland/yay-packages.txt")
+yay -S --noconfirm $(cat "$HOME/hyprdev/yay-packages.txt")
 echo "Finished!"
 
 cat "$HOME/.ssh/id_ed25519.pub"
