@@ -1,4 +1,5 @@
 google-chrome
+overskride
 heroic-games-launcher-bin
 bluetuith
 xwaylandvideobridge

@@ -16,7 +16,16 @@ config.enable_tab_bar = false
 
 config.window_background_opacity = 0.8
 
+config.warn_about_missing_glyphs = false
+
+config.automatically_reload_config = true
+
 config.font_size = 14
+
+config.font = wezterm.font_with_fallback({
+	"JetBrainsMono Nerd Font",
+	"Font Awesome",
+})
 
 -- and finally, return the configuration to wezterm
 return config
