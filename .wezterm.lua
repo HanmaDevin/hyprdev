@@ -20,11 +20,17 @@ config.warn_about_missing_glyphs = false
 
 config.automatically_reload_config = true
 
+config.window_close_confirmation = "NeverPrompt"
+
 config.font_size = 14
 
 config.font = wezterm.font_with_fallback({
 	"JetBrainsMono Nerd Font",
-	"Font Awesome",
+	"Font Awesome 6 Brands",
+	"Font Awesome 6 Brands",
+	"Font Awesome 6 Free",
+	"Font Awesome v4 Compatability",
+	"Noto Color Emoji",
 })
 
 -- and finally, return the configuration to wezterm
