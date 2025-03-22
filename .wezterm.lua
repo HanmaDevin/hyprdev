@@ -18,6 +18,13 @@ config.window_background_opacity = 0.8
 
 config.warn_about_missing_glyphs = false
 
+config.window_padding = {
+	left = 20,
+	right = 20,
+	top = 20,
+	bottom = 20,
+}
+
 config.automatically_reload_config = true
 
 config.window_close_confirmation = "NeverPrompt"
