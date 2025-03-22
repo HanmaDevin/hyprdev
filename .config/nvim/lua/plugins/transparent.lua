@@ -32,7 +32,7 @@ return {
         'EndOfBuffer',
       },
       -- table: additional groups that should be cleared
-      extra_groups = {},
+      extra_groups = { 'NvimTreeNormal', 'NeoTree' },
       -- table: groups you don't want to clear
       exclude_groups = {},
       -- function: code to be executed after highlight groups are cleared
