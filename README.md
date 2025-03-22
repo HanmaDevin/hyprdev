@@ -110,11 +110,6 @@ Hyprland sometimes can be problematic so here you can find some problems and how
 
 Maybe you will experience sound and/or mouse issues to solve that add these launch options `-sdlaudiodriver pulseaudio -sdlvideodriver x11` after the `%COMMAND%` part
 
-### GTK Apps not being dark
-
-This is kind of stupid even though it's set during installation, it only takes real effect when manually applied
-through the `GTK Settings`-App. Just open it and click on `apply`.
-
 ## Keybinds
 
 Keybind | Action
